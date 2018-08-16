@@ -88,6 +88,7 @@ namespace IdentityServer4
                 data,
                 new CookieOptions
                 {
+                    IsEssential = true,
                     HttpOnly = true,
                     Secure = Secure,
                     Path = CookiePath
@@ -133,6 +134,7 @@ namespace IdentityServer4
                 ".",
                 new CookieOptions
                 {
+                    IsEssential = true,
                     Expires = new DateTime(2000, 1, 1),
                     HttpOnly = true,
                     Secure = Secure,

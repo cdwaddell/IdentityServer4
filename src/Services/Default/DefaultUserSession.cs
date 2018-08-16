@@ -373,6 +373,7 @@ namespace IdentityServer4.Services
 
             var options = new CookieOptions
             {
+                IsEssential = true,
                 HttpOnly = false,
                 Secure = secure,
                 Path = path,
